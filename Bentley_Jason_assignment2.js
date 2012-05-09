@@ -18,13 +18,35 @@ for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
 
 
 
-var accreditorsHappy = function (numStudents , numInstructors) {
+var accreditorsHappyTest = function (numStudents , numInstructors) {
+	var areAccredHappy;
 	if (numStudents / numInstructors <= 8) {
-		console.log("The accreditors are happy.  We always need 1 instructor per 8 students.");
+		areHappy = "The accreditors are happy.  We always need 1 instructor per 8 students.";
 	} else {
-		console.log("Sorry, but the accreditors will not like this.  We need one more instructor.");
+		areHappy = "Sorry, but the accreditors will not like this.  We always need 1 instructor per 8 students.";
 	}
+	return areHappy;
 };
+
+var areAccredHappy = accreditorsHappyTest(16, instructors.length);
+
+console.log(areAccredHappy);
+
+
+
+console.log("Before we begin, we need to clean " + numStations + " workstations.  We all know that students in the " + audio + " are dirty and gross, so this needs to get done.");
+
+var cleanConsoles = function(numStations) {
+
+while (numStations > 0) {
+	console.log(numStations + " workstations left to clean.  Hurry up!  We have stuff to learn!")
+	numStations--
+};
+	console.log("Sweet! Now that all workstations have been cleaned, we can get to work.")
+};
+cleanConsoles(numStations);
+
+
 
 
 

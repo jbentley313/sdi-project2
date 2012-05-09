@@ -39,13 +39,21 @@ console.log("Before we begin, we need to clean " + numStations + " workstations.
 var cleanConsoles = function(numStations) {
 
 while (numStations > 0) {
-	console.log(numStations + " workstations left to clean.  Hurry up!  We have stuff to learn!")
+	console.log(numStations + " workstations left to clean.  Hurry up!  We have stuff to learn!");
 	numStations--
 };
-	console.log("Sweet! Now that all workstations have been cleaned, we can get to work.")
+	console.log("Sweet! Now that all workstations have been cleaned, we can get to work.");
 };
 cleanConsoles(numStations);
 
+
+var experience = function(yearsExperience, degree) {
+	var myExperience = "Just to let you know you are in good hands. I am your main instructor, and have " + yearsExperience  + " years experience as well as received my " + degree + " degree.";
+	return myExperience;	
+};
+
+var getExperience = experience(15, "associates");
+console.log(getExperience);
 
 
 

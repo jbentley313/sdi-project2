@@ -28,9 +28,9 @@ var accreditorsHappyTest = function (numStudents , numInstructors) {
 	return areHappy;
 };
 
-var areAccredHappy = accreditorsHappyTest(16, instructors.length);
+var areHappy = accreditorsHappyTest(16, instructors.length);
 
-console.log(areAccredHappy);
+console.log(areHappy);
 
 
 
@@ -58,9 +58,13 @@ console.log(getExperience);
 
 
 console.log("Your schedule is as follows:");
-	for (var ii = 0; ii < labTopics.length; ii++) {
-			console.log("Lab " + labTopics [ii]);
+
+	for (var ii = 0, labNum = 1; ii < labTopics.length; ii++) {
+		{
+			console.log("Lab " + labNum++ + " : " + labTopics [ii]);
 			
+};
+
 };
 
 

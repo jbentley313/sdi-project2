@@ -7,8 +7,8 @@
 
 var audio = "Recording Program",
 	film = "Film Program",
-	numStations = 20
-	instructors = ["Jason Bentley", "Alan Mason"] 
+	numStations = 20,
+	instructors = ["Jason Bentley", "Alan Mason"],
 	labTopics = ["Introduction", "Monitor Path Connection", "Effects and Inserts", "Input Path Connection", "Quiz" ]
 
 for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
@@ -54,6 +54,16 @@ var experience = function(yearsExperience, degree) {
 
 var getExperience = experience(15, "associates");
 console.log(getExperience);
+
+
+
+console.log("Your instructors will trade off teaching every other lab. The schedule is as follows:");
+// var firstFiveLabs = function() {
+	for (var ii = 0; ii < labTopics.length; ii++) {
+		for (var i = 0; i < instructors.length; i++) {
+			console.log( instructors [i] + labTopics [ii]);
+		};
+};
 
 
 

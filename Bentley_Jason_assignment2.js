@@ -7,14 +7,26 @@
 
 var audio = "Recording Program",
 	film = "Film Program",
-	numStudents = "18"
-	instructorOdd = "Alan Mason", 
-	instructorEven = "Jason Bentley", 
+	numStations = 20
+	instructors = ["Jason Bentley", "Alan Mason"] 
 	labTopics = ["Introduction", "Monitor Path Connection", "Effects and Inserts", "Input Path Connection", "Quiz" ]
 
-	for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
-		console.log("Only " + minutesTillClass + " minutes until class starts!" );
-	};
-		console.log("OK!, Let's take roll and start this class!");
+for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
+	console.log("Only " + minutesTillClass + " minutes until class starts!" );
+};
+	console.log("OK!, Let's take roll and start this class!");
 
-		
+
+
+var accreditorsHappy = function (numStudents , numInstructors) {
+	if (numStudents / numInstructors <= 8) {
+		console.log("The accreditors are happy.  We always need 1 instructor per 8 students.");
+	} else {
+		console.log("Sorry, but the accreditors will not like this.  We need one more instructor.");
+	}
+};
+
+
+
+
+

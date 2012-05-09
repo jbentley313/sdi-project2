@@ -52,17 +52,15 @@ var experience = function(yearsExperience, degree) {
 	return myExperience;	
 };
 
-var getExperience = experience(15, "associates");
+var getExperience = experience("15", "associates");
 console.log(getExperience);
 
 
 
-console.log("Your instructors will trade off teaching every other lab. The schedule is as follows:");
-// var firstFiveLabs = function() {
+console.log("Your schedule is as follows:");
 	for (var ii = 0; ii < labTopics.length; ii++) {
-		for (var i = 0; i < instructors.length; i++) {
-			console.log( instructors [i] + labTopics [ii]);
-		};
+			console.log("Lab " + labTopics [ii]);
+			
 };
 
 

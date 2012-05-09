@@ -8,6 +8,7 @@
 var audio = "Recording Program",
 	film = "Film Program",
 	numStations = 20,
+	StaionIds = ["Station A1", "Station A2", "Station A3", "Station A4", "Station A5", "Station B1", "Station B2", "Station B3", "Station B4", "Station B5", "Station C1", "Station C2", "Station C3", "Station C4", "Station C5", "Station D1", "Station D2", "Station D3", "Station D4", "Station D5"],
 	instructors = ["Jason Bentley", "Alan Mason"],
 	labTopics = ["Introduction", "Monitor Path Connection", "Effects and Inserts", "Input Path Connection", "Quiz" ]
 
@@ -18,8 +19,8 @@ for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
 
 
 
-var accreditorsHappyTest = function (numStudents , numInstructors) {
-	var areAccredHappy;
+var accreditorsHappyTest = function(numStudents , numInstructors) {
+	var areHappy;
 	if (numStudents / numInstructors <= 8) {
 		areHappy = "The accreditors are happy.  We always need 1 instructor per 8 students.";
 	} else {
@@ -52,7 +53,7 @@ var experience = function(yearsExperience, degree) {
 	return myExperience;	
 };
 
-var getExperience = experience("15", "associates");
+var getExperience = experience("15", "Associates");
 console.log(getExperience);
 
 
@@ -66,6 +67,7 @@ console.log("Your schedule is as follows:");
 };
 
 };
+
 
 
 

@@ -80,7 +80,7 @@ for (i = 0; i < StationIds.length; i++) {
 };
 cleanConsoles(StationIds, StationIds.length);
 console.log("We have just cleaned the following consoles : " + newCleanedConsoles);
- 	console.log("Great! Now that all " + StationIds.length + " workstations have been cleaned, we can get to work.");
+console.log("Great! Now that all " + StationIds.length + " workstations have been cleaned, we can get to work.");
 
 
 
@@ -96,13 +96,17 @@ console.log(getExperience);
 
 console.log("Your schedule is as follows:");
 
-	for (var ii = 0, labNum = 1; ii < labTopics.length; ii++) {
-		{
-			console.log("Lab " + labNum++ + " : " + labTopics [ii]);
 
-	};
+var ii = 0;
+var labNum = 1;
+while (ii < labTopics.length) {
+	console.log("Lab" + labNum++ + " : " + labTopics [ii]);
+	ii++;
+}
 
-};
+
+
+
 // the following is not the real way to subtract time, but works for this example.  
 var doWeKeepWorking = function(classTime,currentTime) {
 	if(currentTime - classTime <= 299) {

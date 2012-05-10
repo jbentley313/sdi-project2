@@ -9,6 +9,8 @@ var audio = "Recording Program",
 	film = "Film Program",
 	numStations = 20,
 	instructors = ["Jason Bentley", "Alan Mason"],
+	StationIds = ["Station A1", "Station A2", "Station A3", "Station A4", "Station A5", "Station B1", "Station B2", "Station B3", "Station B4", "Station B5", "Station C1", "Station C2", "Station C3", "Station C4", "Station C5", "Station D1", "Station D2", "Station D3", "Station D4", "Station D5"],
+
 	labTopics = ["Introduction", "Monitor Path Connection", "Effects and Inserts", "Input Path Connection", "Quiz" ]
 
 for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
@@ -34,17 +36,16 @@ console.log(areHappy);
 
 
 
-console.log("Before we begin, we need to clean " + numStations + " workstations.  We all know that students in the " + audio + " are dirty and gross, so this needs to get done.");
+console.log("Before we begin, we need to clean " + StationIds.length + " workstations.  We all know that students in the " + audio + " are dirty and gross, so this needs to get done.");
 
-var cleanConsoles = function(numStations) {
+var cleanConsoles = function(StationIds) {
 
-while (numStations > 0) {
-	console.log(numStations + " workstations left to clean.  Hurry up!  We have stuff to learn!");
-	numStations--
+for (i = 0; i < StationIds.length; i++) {
+	console.log("We just cleaned " + StationIds[i]);
 };
-	console.log("Sweet! Now that all workstations have been cleaned, we can get to work.");
+	console.log("Great! Now that all workstations have been cleaned, we can get to work.");
 };
-cleanConsoles(numStations);
+cleanConsoles(StationIds);
 
 
 var experience = function(yearsExperience, degree) {

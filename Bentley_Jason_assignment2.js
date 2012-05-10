@@ -6,10 +6,28 @@
 // First assignment: Project 2: Teaching at an Audio School
 
 var audio = "Recording Program",
-	film = "Film Program",
-	numStations = 20,
+	classTime = 800,
 	instructors = ["Jason Bentley", "Alan Mason"],
-	StationIds = ["Station A1", "Station A2", "Station A3", "Station A4", "Station A5", "Station B1", "Station B2", "Station B3", "Station B4", "Station B5", "Station C1", "Station C2", "Station C3", "Station C4", "Station C5", "Station D1", "Station D2", "Station D3", "Station D4", "Station D5"],
+	StationIds = ["Station GA1", 
+				"Station GA2", 
+				"Station GA3", 
+				"Station GA4", 
+				"Station GA5", 
+				"Station GB1", 
+				"Station GB2", 
+				"Station GB3", 
+				"Station GB4", 
+				"Station GB5", 
+				"Station GC1", 
+				"Station GC2", 
+				"Station GC3", 
+				"Station GC4", 
+				"Station GC5", 
+				"Station GD1", 
+				"Station GD2", 
+				"Station GD3", 
+				"Station GD4", 
+				"Station GD5"]
 
 	labTopics = ["Introduction", "Monitor Path Connection", "Effects and Inserts", "Input Path Connection", "Quiz" ]
 
@@ -17,7 +35,7 @@ for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
 	console.log("Only " + minutesTillClass + " minutes until class starts!" );
 };
 	console.log("OK!, Let's take roll and start this class!");
-
+	console.log("Your instructors are " + instructors[0] + " and " + instructors[1]);
 
 
 var accreditorsHappyTest = function (numStudents , numInstructors) {
@@ -48,8 +66,7 @@ for (i = 0; i < StationIds.length; i++) {
 cleanConsoles(StationIds, StationIds.length);
 console.log("We have just cleaned the following consoles : " + newCleanedConsoles);
  	console.log("Great! Now that all " + StationIds.length + " workstations have been cleaned, we can get to work.");
-// var SparklingConsoles = cleanConsoles(StationIds, StationIds.length);
-// 	console.log(newClean);
+
 
 
 var experience = function(yearsExperience, degree) {
@@ -57,7 +74,7 @@ var experience = function(yearsExperience, degree) {
 	return myExperience;	
 };
 
-var getExperience = experience("15", "associates");
+var getExperience = experience("15", "Associates");
 console.log(getExperience);
 
 

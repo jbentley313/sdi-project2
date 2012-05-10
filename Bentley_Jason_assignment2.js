@@ -6,7 +6,7 @@
 // First assignment: Project 2: Teaching at an Audio School
 
 var audio = "Recording Program",
-	classTime = 0800,
+	classTime = 800,
 	instructors = ["Jason Bentley", "Alan Mason"],
 	StationIds = ["Station GA1", 
 				"Station GA2", 
@@ -29,7 +29,11 @@ var audio = "Recording Program",
 				"Station GD4", 
 				"Station GD5"]
 
-	labTopics = ["Introduction", "Monitor Path Connection", "Effects and Inserts", "Input Path Connection", "Quiz" ]
+	labTopics = ["Introduction",
+				 "Monitor Path Connection",
+				 "Effects and Inserts", 
+				 "Input Path Connection", 
+				 "Quiz"]
 
 for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
 	console.log("Only " + minutesTillClass + " minutes until class starts!" );
@@ -40,7 +44,8 @@ for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
 
 
 
-var accreditorsHappyTest = function (numStudents , numInstructors) {
+
+var accreditorsHappyTest = function(numStudents , numInstructors) {
 	var areAccredHappy;
 	if (numStudents / numInstructors <= 8) {
 		areHappy = "The accreditors are happy.  We always need 1 instructor per 8 students.";
@@ -54,6 +59,14 @@ var areHappy = accreditorsHappyTest(14, instructors.length);
 
 console.log(areHappy);
 
+var dumbTest = function(nameOfSchool) {
+	if (nameOfSchool === "The Los Angeles Recording School") {
+	console.log("Whew! Just checking to make sure you guys are awake.");
+	}	else {
+	console.log("I'm not sure if you are in the right place. Let me see your school id.");
+	};
+};
+dumbTest("The Los Angeles Recording School");
 
 
 console.log("Before we begin, we need to clean " + StationIds.length + " workstations.  We all know that students in the " + audio + " are dirty and gross, so this needs to get done.");

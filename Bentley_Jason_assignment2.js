@@ -37,15 +37,19 @@ console.log(areHappy);
 
 
 console.log("Before we begin, we need to clean " + StationIds.length + " workstations.  We all know that students in the " + audio + " are dirty and gross, so this needs to get done.");
-
-var cleanConsoles = function(StationIds) {
-
+	var newCleanedConsoles = [];
+	var cleanConsoles = function(StationIds, howManyStations) {
 for (i = 0; i < StationIds.length; i++) {
-	console.log("We just cleaned " + StationIds[i]);
+	 var cleanedConsole = ("We just cleaned " + StationIds[i]);
+	 newCleanedConsoles.push(cleanedConsole);
 };
-	console.log("Great! Now that all workstations have been cleaned, we can get to work.");
+	return newCleanedConsoles;
 };
-cleanConsoles(StationIds);
+cleanConsoles(StationIds, StationIds.length);
+console.log(newCleanedConsoles);
+// var SparklingConsoles = cleanConsoles(StationIds, StationIds.length);
+// 	console.log("Great! Now that all " + StationIds.length + " workstations have been cleaned, we can get to work.");
+// 	console.log(newClean);
 
 
 var experience = function(yearsExperience, degree) {

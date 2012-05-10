@@ -6,7 +6,7 @@
 // First assignment: Project 2: Teaching at an Audio School
 
 var audio = "Recording Program",
-	classTime = 800,
+	classTime = 0800,
 	instructors = ["Jason Bentley", "Alan Mason"],
 	StationIds = ["Station GA1", 
 				"Station GA2", 
@@ -36,6 +36,8 @@ for (var minutesTillClass=60; minutesTillClass > 0; minutesTillClass-=5) {
 };
 	console.log("OK!, Let's take roll and start this class!");
 	console.log("Your instructors are " + instructors[0] + " and " + instructors[1]);
+
+
 
 
 var accreditorsHappyTest = function (numStudents , numInstructors) {
@@ -85,11 +87,19 @@ console.log("Your schedule is as follows:");
 		{
 			console.log("Lab " + labNum++ + " : " + labTopics [ii]);
 
-};
+	};
 
 };
-
-
-
+// the following is not the real way to subtract time, but works for this example.  
+var doWeKeepWorking = function(classTime,currentTime) {
+	if(currentTime - classTime <= 299) {
+		keepWorking = ("There is still time left in class, we are going to keep working.");
+	}	else {
+		keepWorking = ("It's time to get out of here!");
+	};
+	return keepWorking;
+};
+var workOrNot = doWeKeepWorking(classTime, 1059);
+console.log(workOrNot);
 
 

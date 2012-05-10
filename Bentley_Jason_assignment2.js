@@ -30,7 +30,7 @@ var accreditorsHappyTest = function (numStudents , numInstructors) {
 	return areHappy;
 };
 
-var areHappy = accreditorsHappyTest(16, instructors.length);
+var areHappy = accreditorsHappyTest(14, instructors.length);
 
 console.log(areHappy);
 
@@ -40,15 +40,15 @@ console.log("Before we begin, we need to clean " + StationIds.length + " worksta
 	var newCleanedConsoles = [];
 	var cleanConsoles = function(StationIds, howManyStations) {
 for (i = 0; i < StationIds.length; i++) {
-	 var cleanedConsole = ("We just cleaned " + StationIds[i]);
+	 var cleanedConsole = (StationIds[i]);
 	 newCleanedConsoles.push(cleanedConsole);
 };
 	return newCleanedConsoles;
 };
 cleanConsoles(StationIds, StationIds.length);
-console.log(newCleanedConsoles);
+console.log("We have just cleaned the following consoles : " + newCleanedConsoles);
+ 	console.log("Great! Now that all " + StationIds.length + " workstations have been cleaned, we can get to work.");
 // var SparklingConsoles = cleanConsoles(StationIds, StationIds.length);
-// 	console.log("Great! Now that all " + StationIds.length + " workstations have been cleaned, we can get to work.");
 // 	console.log(newClean);
 
 
@@ -71,8 +71,6 @@ console.log("Your schedule is as follows:");
 };
 
 };
-
-
 
 
 
